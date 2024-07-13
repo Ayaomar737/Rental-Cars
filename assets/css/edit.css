@@ -1,3 +1,6 @@
+.color-primary{
+    color: #183e6f !important;
+}
 .header .navbar .navbar-nav > li.drop-edit.active > .dropdown-toggle::after{
     display: none;
 }
@@ -221,3 +224,70 @@ input[type="range"]::-webkit-slider-thumb{
     cursor: pointer;
     box-shadow: 0 0 10px rgb(0 0 0 / 20%);
 }
+/* register & login */
+.area-login,
+.area-account{
+    width: 500px;
+    min-height: 600px;
+    background-color: white;
+    padding: 20px 40px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 15%);
+}
+.form-register label,
+.form-login label{
+    color: gray;
+}
+.login .container,
+.register .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.area-login input{
+    padding: 15px;
+    border: 1px solid gainsboro;
+}
+.area-account input,
+.area-forget input{
+    padding: 10px;
+    border: 1px solid gainsboro;
+}
+.area-login input:focus,
+.area-account input:focus,
+.area-forget input:focus{
+    border: 1px solid #183e6f;
+    outline: none;
+}
+.area-login .forget{
+    color: gray;
+}
+.form-check{
+    padding-left: 10px;
+}
+.area-login a,
+.area-account a{
+    color: black;
+}
+.area-login a:hover,
+.area-account a:hover{
+    color: #183e6f;
+}
+.form-check-input:checked{
+    border: none;
+    outline: none;
+}
+.policy{
+    cursor: pointer;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+}
+.policy:hover{
+    color: #183e6f;
+}
+
+@media screen and (max-width: 768px) {
+    .section-app img{
+      height: 220px !important;
+    }
+  }
