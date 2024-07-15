@@ -63,6 +63,9 @@
           src="assets/images/sliders/logo.png"
           alt="Logo"
       /></a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
       <div class="collapse navbar-collapse" id="navbarContent">
         <ul class="navbar-nav me-auto">
           <li class="nav-item has-dropdown drop-edit active" data-hover="">
@@ -248,19 +251,15 @@ id="featuresBar-1"
                 </div>
                 <hr style="background-color: #8e8b8b;">
                 <h5 class="mt-4 mb-4 fw-bold">Filter</h5>
-                <div class="slider-price">
-                  <div class="progress"></div>
-                </div>
-                <div class="range-input">
-                  <input type="range" class="range-min" min="0" max="500" value="50">
-                  <input type="range" class="range-max" min="0" max="500" value="300">
-                </div>
-                <div class="price-input mt-4 mb-4">
-                  <div class="fw-bold d-flex align-items-center">Price:</div>
-                    <input type="" class="input-min" value="50">
-                  <div class="separator">-</div>
-                    <input type="" class="input-max" value="300">
-                </div>
+                <div class="widget-filter">
+                  <div class="widget-content clearfix">
+                  <div id="slider-range"></div>
+                  <p class="slider-mount">
+                  <label for="amount">Price: </label>
+                  <input id="amount" type="text" readonly="" /><a class="btn-filter" href="#">Filter</a>
+                  </p>
+                  </div>
+                  </div>
                 <hr>
             </div>
             <div class="col-lg-9 col-12">

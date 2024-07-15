@@ -12,6 +12,15 @@ $('.tabs-list li').on('click', function (){
   $($(this).data('content')).fadeIn();
 });
 
+$('.show-account').on('click', function (){
+
+  $(this).addClass('active').siblings().removeClass('active');
+
+  $('.content-list > div').hide();
+
+  $($(this).data('content')).fadeIn();
+});
+
   $(window).on("load", function () {
     $(".preloader").fadeOut(5000);
     $(".preloader").remove();
@@ -342,9 +351,9 @@ $('.tabs-list li').on('click', function (){
     },
   });
   $sliderAmount.val(
-    "$" +
+    "sr" +
       $sliderRange.slider("values", 0) +
-      " - $" +
+      " - sr" +
       $sliderRange.slider("values", 1)
   );
   var contactForm = $(".contactForm"),

@@ -128,13 +128,13 @@
 <div class="row">
 <div class="col-12">
 <div class="title d-flex justify-content-center">
-<h1 class="title-heading">Login</h1>
+<h1 class="title-heading">Deals</h1>
 </div>
 <div class="">
     <div class="container">
     <ol class="breadcrumb d-flex justify-content-center text-white">
     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Login</li>
+    <li class="breadcrumb-item active" aria-current="page">Deals</li>
     </ol>
     
     </div>
@@ -147,30 +147,103 @@
 </section>
 
 
-  <!-- login -->
-  <div class="login bg-white pt-5 pb-5">
+  <!-- content my account -->
+  <div class="my-account bg-white pt-5 pb-5">
     <div class="container">
-        <div class="area-login">
-            <div class="text-center mt-3 mb-4">
-                <h2>Login</h2>
-                <p>Please login using account detail bellow.</p>
+        <div class="row">
+            <div class="col-md-3 col-12">
+                <table class="table border rounded account-list">
+                    <tbody>
+                      <tr class="show-account active" data-content=".content-two">
+                        <td>
+                            <span class="icon-account"><i class="fas fa-car"></i></span>
+                            <span>Orders</span>
+                        </td>
+                      </tr>
+                      <tr class="show-account" data-content=".content-four">
+                        <td>
+                            <span class="icon-account"><i class="fas fa-address-card"></i></span>
+                            <span>Account Details</span>
+                        </td>
+                      </tr>
+                      <tr class="show-account">
+                        <td>
+                            <span class="icon-account"><i class="fas fa-lock"></i></span>
+                            <span>Logout</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
             </div>
-            <div class="mb-2 d-flex flex-column form-login">
-                <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
-                <input type="number" id="exampleFormControlInput1">
-              </div>
-              <div class="mb-4 d-flex flex-column form-login">
-                <label for="exampleFormControlInput1" class="form-label">Password</label>
-                <input type="password" class="" id="inputPassword">
-              </div>
-                <button class="btn btn--secondary btn-book" type="submit">Login</button>
-                <div class="d-flex justify-content-center mt-4">
-                  <p class="text-black-50 me-1">Don't Have an Account?</p>
-                  <a href="register.html" class="text-decoration-none">Sign Up</a>
+            <div class="col-md-9 col-12">
+                <div class="content-list">
+                    <div class="content-two border rounded border-bottom-0">
+                        <h4 class="pt-3 ps-3 fw-bold">Orders</h4>
+                        <hr style="background-color: #8e8b8b;">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th scope="col" class="ps-3">Order</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Total</th>
+                                  </tr>
+                              <tr>
+                                <td class="ps-3">#1234</td>
+                                <td>March 15, 2020</td>
+                                <td>Processing</td>
+                                <td>78.00 sr</td>
+                              </tr>
+                              <tr>
+                                <td class="ps-3">#2355</td>
+                                <td>June 20, 2020</td>
+                                <td>Completed</td>
+                                <td>81.00 sr</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                    <div class="content-four">
+                        <div class="account-details border rounded">
+                            <h4 class="mt-3 ms-3 fw-bold">Accound Details</h4>
+                            <hr style="background-color: #8e8b8b;">
+                            <form class="row m-3">
+                                <div class="col-sm-12 mb-3">
+                                    <label for="validationCustom01" class="form-label">First Name<span>*</span></label>
+                                    <input type="text" class="w-100 p-2 account" required>
+                                </div>
+                                <div class="col-sm-12 mb-3">
+                                    <label for="validationCustom01" class="form-label">Phone Number<span>*</span></label>
+                                    <input type="number" class="w-100 p-2 account" required>
+                                </div>
+                                <div class="col-sm-12 mb-3">
+                                    <label for="validationCustom01" class="form-label">Email Address<span>*</span></label>
+                                    <input type="email" class="w-100 p-2 account" required>
+                                </div>
+                                <div class="col-sm-12 mb-3">
+                                    <label for="validationCustom01" class="form-label">Current Password<span>*</span></label>
+                                    <input type="password" class="w-100 p-2 account" required>
+                                </div>
+                                <div class="col-sm-12 mb-3">
+                                    <label for="validationCustom01" class="form-label">New Password<span>*</span></label>
+                                    <input type="password" class="w-100 p-2 account" required>
+                                </div>
+                                <div class="col-sm-12 mb-3">
+                                    <label for="validationCustom01" class="form-label">Confirm Password<span>*</span></label>
+                                    <input type="password" class="w-100 p-2 account" required>
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <button class="btn-submit btn-save" type="submit">Save</button>
+                                </div>
+                              </form>
+                        </div>
+                    </div>
                 </div>
+            </div>
         </div>
     </div>
   </div>
+
 
 
 <div class="footer-bottom" style="background-color: #111a36;">
