@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US">
+<html lang="en-US">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,9 +20,16 @@
     />
 
     <link href="assets/css/vendor.min.css" rel="stylesheet" />
+
     <link href="assets/css/style.css" rel="stylesheet" />
 
     <link href="assets/css/edit.css" rel="stylesheet" />
+
+    <!-- arabic style -->
+
+    <!-- <link href="assets/css/rtl.css" rel="stylesheet" /> -->
+
+
 
     <script>
       (function (w, d, s, l, i) {
@@ -71,7 +78,7 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav me-auto">
+            <ul class="navbar-nav me-auto ms-auto">
               <li class="nav-item has-dropdown drop-edit active" data-hover="">
                 <a class="dropdown-toggle" href="index.html"><span>home</span></a>
               </li>
@@ -96,14 +103,14 @@
             </ul>
             <div class="module-holder">
               <div class="module module-language">
-                <div class="selected"><i class="fas fa-user color-primary" style="font-size: 20px; margin-right: 20px;"></i></div>
+                <div class="selected"><i class="fas fa-user color-primary" style="font-size: 20px; margin: 0 20px;"></i></div>
                 <div class="lang-list">
                 <ul>
                 <li><a href="register.html" class="d-flex">
-                  <i class="fas fa-address-card me-2 mt-1"></i>Register
+                  <i class="fas fa-address-card me-2 ms-2 mt-1"></i>Register
                 </a></li>
                 <li><a href="login.html">
-                  <i class="fas fa-lock me-2 mt-1"></i>Login
+                  <i class="fas fa-lock me-2 ms-2 mt-1"></i>Login
                   
                 </a></li>
                 </ul>
@@ -127,7 +134,7 @@
       <section class="slider slider-2" id="slider-2">
         <div class="container-fluid pe-0 ps-0">
           <div
-            class="slider-carousel owl-carousel carousel-navs carousel-dots"
+            class="slider-carousel owl-carousel carousel-navs carousel-dots" style="direction: ltr;"
             data-slide="1"
             data-slide-rs="1"
             data-autoplay="true"
@@ -143,7 +150,7 @@
               </div>
               <div class="container">
                 <div class="row">
-                  <div class="col-12 col-lg-7">
+                  <div class="col-12">
                     <div class="slide-content">
                       <h1 class="slide-headline">
                         CAR Rental
@@ -163,7 +170,7 @@
               </div>
               <div class="container">
                 <div class="row">
-                  <div class="col-12 col-lg-7">
+                  <div class="col-12">
                     <div class="slide-content">
                       <h1 class="slide-headline">
                         CAR Rental
@@ -260,7 +267,7 @@
         </div>
         <div>
           <div
-            class="carousel owl-carousel carousel-dots"
+            class="carousel owl-carousel carousel-dots" style="direction: ltr;"
             data-slide="3"
             data-slide-rs="1"
             data-autoplay="true"
@@ -389,7 +396,7 @@
           </div>
 
           <div
-            class="carousel owl-carousel carousel-dots"
+            class="carousel owl-carousel carousel-dots" style="direction: ltr;"
             data-slide="3"
             data-slide-rs="1"
             data-autoplay="true"
@@ -485,11 +492,11 @@
               </div>
               <div style="margin-top: 70px; display: flex; flex-wrap: wrap;">
                 <a class="btn--app btn--app--change mb-3" href="#">
-                  <i class="fas fa-play fa-lg me-2"></i>
+                  <i class="fas fa-play fa-lg me-2 ms-2"></i>
                   Google Play
                 </a>
                 <a class="btn--app mb-3" href="#">
-                  <i class="fas fa-apple-alt fa-lg me-2"></i>
+                  <i class="fas fa-apple-alt fa-lg me-2 ms-2"></i>
                   Play Store
                 </a>
               </div>
@@ -514,7 +521,7 @@
           </div>
 
           <div
-            class="carousel owl-carousel carousel-dots"
+            class="carousel owl-carousel carousel-dots" style="direction: ltr;"
             data-slide="3"
             data-slide-rs="1"
             data-autoplay="true"
@@ -733,20 +740,20 @@
                   <div class="widget-content">
                     <ul>
                       <li class="address text-white d-flex">
-                        <i class="energia-location-Icon" style="margin-top: 2px; font-size: 20px; margin-right: 10px;"></i>
+                        <i class="energia-location-Icon" style="margin-top: 2px; font-size: 20px; margin: 0 10px;"></i>
                         <p class="text-white">
                           2307 Beverley Rd Brooklyn, New York 11226 United
                           States.
                         </p>
                       </li>
                       <li class="address text-white d-flex">
-                        <i class="fas fa-phone-alt" style="margin-top: 2px; font-size: 20px; margin-right: 10px;"></i>
+                        <i class="fas fa-phone-alt" style="margin-top: 2px; font-size: 20px; margin: 0 10px;"></i>
                         <a class="text-white" href="tel:01000000000">
                           01000000000
                         </a>
                       </li>
                       <li class="address text-white d-flex">
-                        <i class="fas fa-envelope" style="margin-top: 2px; font-size: 20px; margin-right: 10px;"></i>
+                        <i class="fas fa-envelope" style="margin-top: 2px; font-size: 20px; margin: 0 10px;"></i>
                         <a class="text-white" href="mailto:test@test.com">
                           test@test.com
                         </a>
